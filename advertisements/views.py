@@ -9,7 +9,6 @@ from advertisements.permissions import IsOwnerOrReadOnly
 from advertisements.serializers import AdvertisementSerializer
 
 
-
 class AdvertisementViewSet(ModelViewSet):
     """ViewSet для объявлений."""
 
@@ -18,8 +17,8 @@ class AdvertisementViewSet(ModelViewSet):
     queryset = Advertisement.objects.all()
     serializer_class = AdvertisementSerializer
     throttle_classes = [AnonRateThrottle]
-    #permission_classes = [IsOwnerOrReadOnly]
-    permission_classes = (IsAuthenticated, )
+    permission_classes = (IsOwnerOrReadOnly, )
+    #permission_classes = (IsAuthenticated, )
     filter_backends = [DjangoFilterBackend]
     filterset_class = AdvertisementFilter
 
