@@ -39,9 +39,9 @@ Content-Type: application/json
 ###
 
 # попытка поменять объявление
-PATCH {{baseUrl}}/advertisements/80/
+PATCH {{baseUrl}}/advertisements/98/
 Content-Type: application/json
-Authorization: Token f04826088f1758415bbf661a6772ed3b893792dd
+Authorization: Token 7596a4db1fbc03f43a99429a191b62fed7df01ee
 
 {
   "status": "CLOSED"
